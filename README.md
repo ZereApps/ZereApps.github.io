@@ -129,7 +129,7 @@
     </div>
     <div class="container" id="appContainer">
         <div class="app">
-            <img src="img/Adobe Photoshop.png" alt="Icono de la aplicación Adobe Photoshop">
+            <img src="img/Adobe Illustrator.png alt=" Adobe Illustrator">
             <div>
                 <h2>Adobe Photoshop</h2>
                 <p>Photoshop es la herramienta de edición de imágenes más popular del mundo. Perfecta para diseñadores y fotógrafos.</p>
