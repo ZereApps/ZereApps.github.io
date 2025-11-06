@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descarga de Aplicaciones de Trabajo</title>
-    <link rel="icon" type="image/png" href="Gemini_Generated_Image_r82afr82afr82afr.jpg">
+    <link rel="icon" type="image/png" href="img/Gemini_Generated_Image_r82afr82afr82afr.png">
     <style>
         body {
             font-family: Arial, sans-serif;
