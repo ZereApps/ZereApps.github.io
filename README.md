@@ -13,17 +13,27 @@
             padding: 0;
         }
         header {
-            /* CONTRASTE MEJORADO (Accesibilidad WCAG) */
             background: #008a47; 
             color: white;
             padding: 20px 0;
             text-align: center;
         }
+        /* --- NUEVO ESTILO PARA EL CONTENEDOR DEL LOGO CENTRAL --- */
+        .main-logo-container {
+            text-align: center; /* Centra la imagen horizontalmente */
+            margin: 30px 0;     /* Espacio arriba y abajo del logo */
+        }
+        .main-logo-container img {
+            max-width: 250px;   /* Tamaño máximo del logo (ajústalo si quieres) */
+            height: auto;
+            border-radius: 15px; /* Bordes ligeramente redondeados para el logo */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para que resalte */
+        }
+        /* --- FIN DE ESTILO PARA EL LOGO CENTRAL --- */
         .search-bar {
             margin: 20px auto;
             text-align: center;
         }
-        /* ESTILO DE FOCO PARA NAVEGACIÓN CON TECLADO (Accesibilidad) */
         .search-bar input[type="text"]:focus,
         .search-bar button:focus,
         .download-button:focus {
@@ -53,7 +63,6 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
-            /* BORDE DECORATIVO DEL CONTENEDOR PRINCIPAL */
             border: 2px solid #dcdcdc; 
             border-radius: 12px;       
             padding: 25px;             
@@ -72,9 +81,9 @@
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
         }
         .app:hover {
-            transform: translateY(-8px); /* Efecto de "levantar" */
+            transform: translateY(-8px); 
             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); 
-            border-color: #007acc; /* Borde azul al hacer hover */
+            border-color: #007acc; 
         }
         .app img {
             width: 80px;
@@ -96,7 +105,6 @@
         .download-button:hover {
             background: #218838;
         }
-        /* Estilo para el mensaje de estado de búsqueda */
         #statusMessage {
             text-align: center;
             color: #cc0000;
@@ -110,6 +118,10 @@
         <h1>Descarga de Aplicaciones de Trabajo</h1>
         <p>Encuentra y descarga las mejores herramientas para tu trabajo creativo.</p>
     </header>
+
+    <div class="main-logo-container">
+        <img src="img/Gemini_Generated_Image_r82afr82afr82afr.png" alt="Logo de ZereApps Studio">
+    </div>
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Buscar aplicaciones..." onkeydown="handleSearchKey(event)" />
         <button type="button" onclick="searchApps()">Buscar</button>
@@ -175,7 +187,6 @@
                 }
             });
 
-            // Reemplazamos el alert por un mensaje en pantalla (Accesibilidad)
             if (!found) {
                 statusDiv.textContent = 'No se encontraron aplicaciones que coincidan con tu búsqueda.';
             } else {
@@ -183,7 +194,6 @@
             }
         }
         
-        // Función para activar la búsqueda al presionar Enter (Accesibilidad)
         function handleSearchKey(event) {
             if (event.key === 'Enter') {
                 searchApps();
